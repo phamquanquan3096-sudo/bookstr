@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_san_pham"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/title_san_pham" />
+    <item
+        android:id="@+id/nav_don_hang"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="@string/title_don_hang" />
+    <item
+        android:id="@+id/nav_cong_no"
+        android:icon="@android:drawable/ic_menu_day"
+        android:title="@string/title_cong_no" />
+    <item
+        android:id="@+id/nav_kho"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/title_kho" />
+    <item
+        android:id="@+id/nav_thong_ke"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Đăng nhập" />
+</menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_card"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title Header -->
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Thêm Thể Loại Sách Mới"
+        android:textColor="@color/header_bg"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Quản lý thể loại sách đang bày bán tại Book Shop"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <!-- Mã Thể Loại -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mã Thể Loại:"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etDialogMaLoai"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_search_input"
+        android:hint="Ví dụ: TL01, KINH_TE..."
+        android:inputType="textCapCharacters"
+        android:paddingHorizontal="12dp"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <!-- Tên Thể Loại -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Tên Thể Loại Sách (*):"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etDialogTenLoai"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_search_input"
+        android:hint="Ví dụ: Sách Văn Học, Kinh Tế..."
+        android:inputType="textCapWords"
+        android:paddingHorizontal="12dp"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <!-- Mô Tả -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Mô Tả Thể Loại:"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etDialogMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_search_input"
+        android:gravity="top"
+        android:hint="Mô tả nội dung các sách thuộc thể loại..."
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <!-- Từ khóa tìm kiếm liên quan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Từ Khóa Nhận Diện Sách (cách nhau bởi dấu phẩy):"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etDialogKeywords"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_search_input"
+        android:hint="Ví dụ: kinh tế, khởi nghiệp, đầu tư, tài chính"
+        android:inputType="text"
+        android:paddingHorizontal="12dp"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <!-- Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_dialog_cancel"
+            android:text="Đóng"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDialogSave"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:text="Lưu Thể Loại"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

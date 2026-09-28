@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginEnd="8dp">
+
+    <!-- Card thumbnail image -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom|start"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/ivThumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Red Delete (X) badge button -->
+    <ImageView
+        android:id="@+id/btnDeleteThumb"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="top|end"
+        android:background="@drawable/bg_badge_favorite"
+        android:padding="3dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/white" />
+
+</FrameLayout>

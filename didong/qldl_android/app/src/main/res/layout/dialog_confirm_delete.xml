@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_rounded"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingTop="28dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="24dp">
+
+    <!-- Warning Icon with soft circular background -->
+    <FrameLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_icon_danger_circle">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="#DC2626" />
+    </FrameLayout>
+
+    <!-- Dialog Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Xác Nhận Xóa Sản Phẩm"
+        android:textColor="#0F172A"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <!-- Product Details Box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_product_preview_box"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tvDialogProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm"
+            android:textColor="#1E293B"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã sản phẩm: "
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvDialogProductCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SP000"
+                android:textColor="#0F2B5B"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Warning Message -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:text="Thao tác này sẽ xóa vĩnh viễn sản phẩm và toàn bộ dữ liệu liên quan (tồn kho, đơn hàng). Không thể hoàn tác sau khi xóa."
+        android:textColor="#64748B"
+        android:textSize="13sp" />
+
+    <!-- Action Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Button Quay Lại -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_dialog_cancel"
+            android:text="Quay lại"
+            android:textAllCaps="false"
+            android:textColor="#334155"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Button Xác Nhận Xóa -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogConfirm"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_dialog_danger"
+            android:elevation="2dp"
+            android:text="Xác nhận xóa"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,5 +1,36 @@
+# Visual Studio
 .vs/
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
+
+# IDE / Editors
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS generated files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Gradle / Build Artifacts
+.gradle/
+**/build/
+**/bin/
+**/out/
+**/target/
+*.class
+
+# Android
+local.properties
+.cxx/
+captures/
+.externalNativeBuild/
+
+# Logs & temp
+*.log

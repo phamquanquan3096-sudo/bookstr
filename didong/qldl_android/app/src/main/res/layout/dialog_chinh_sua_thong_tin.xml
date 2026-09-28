@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✏️ Chỉnh Sửa Thông Tin Cá Nhân"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Họ và tên -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ và tên (*)"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etDialogFullName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_search_input"
+        android:paddingHorizontal="14dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:hint="Nhập họ và tên đầy đủ"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Số điện thoại -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại liên hệ (*)"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etDialogPhone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_search_input"
+        android:paddingHorizontal="14dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:hint="Nhập số điện thoại"
+        android:inputType="phone"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ Email"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etDialogEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_search_input"
+        android:paddingHorizontal="14dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:hint="Nhập địa chỉ email (nếu có)"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Địa chỉ (dành cho Khách hàng / Đại lý) -->
+    <LinearLayout
+        android:id="@+id/layoutDialogAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ nhận hàng"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etDialogAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_search_input"
+            android:paddingHorizontal="14dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:hint="Nhập địa chỉ nhận hàng"
+            android:inputType="textPostalAddress"
+            android:layout_marginBottom="12dp" />
+    </LinearLayout>
+
+    <!-- Mật khẩu mới (dành cho Nhân viên / Admin) -->
+    <LinearLayout
+        android:id="@+id/layoutDialogPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu mới (để trống nếu không đổi)"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etDialogPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_search_input"
+            android:paddingHorizontal="14dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:hint="Mật khẩu mới"
+            android:inputType="textPassword"
+            android:layout_marginBottom="12dp" />
+    </LinearLayout>
+
+    <!-- Button Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnDialogCancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="HỦY BỎ"
+            android:textColor="@color/text_secondary"
+            app:strokeColor="@color/text_secondary" />
+
+        <Button
+            android:id="@+id/btnDialogSave"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:text="LƯU THAY ĐỔI"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

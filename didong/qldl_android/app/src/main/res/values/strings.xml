@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Book Shop</string>
+    <string name="title_san_pham">Sản Phẩm</string>
+    <string name="title_don_hang">Đơn Hàng</string>
+    <string name="title_cong_no">Công Nợ</string>
+    <string name="title_kho">Kho Hàng</string>
+    <string name="title_nhan_vien">Nhân Viên</string>
+    <string name="title_thong_ke">Thống Kê</string>
+    <string name="login_title">Book Shop xin chào</string>
+    <string name="username_hint">Tên đăng nhập / Email</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="btn_login">Đăng Nhập</string>
+    <string name="role_daily">Tài khoản Khách hàng</string>
+    <string name="role_staff">Tài khoản Admin</string>
+</resources>
